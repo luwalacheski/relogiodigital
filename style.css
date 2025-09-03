@@ -1,49 +1,22 @@
-/* Arquivo: style.css */
-
-body {
-    display: flex; /* Usamos flexbox para centralizar facilmente */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    min-height: 100vh; /* Garante que o body ocupe pelo menos toda a altura da tela */
-    background-color: #fce4ec; /* Este é um tom suave de rosa bebê */
-    font-family: 'Arial', sans-serif; /* Uma fonte limpa e legível */
-    color: #c2185b; /* Um tom de rosa mais escuro para o texto, para bom contraste */
-    margin: 0; /* Remove a margem padrão do body */
-    overflow: hidden; /* Evita barras de rolagem desnecessárias */
-}
-
-.relogio-container {
-    text-align: center; /* Centraliza o texto dentro deste container */
-    background-color: rgba(255, 255, 255, 0.85); /* Fundo branco com um pouco de transparência para um visual delicado */
-    padding: 30px 50px; /* Espaçamento interno */
-    border-radius: 20px; /* Bordas arredondadas para um toque mais suave */
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); /* Uma sombra sutil para dar profundidade */
-}
-
-#relogio {
-    font-size: 7em; /* Tamanho bem grande para o relógio, chamando atenção */
-    font-weight: bold; /* Deixa os números em negrito */
-    letter-spacing: 8px; /* Espaçamento entre os números para melhor leitura */
-    text-shadow: 3px 3px 8px rgba(255, 182, 193, 0.6); /* Uma sombra rosa clara para dar um brilho */
-}
-
-/* Estilos adicionais para responsividade (opcional, mas recomendado) */
-@media (max-width: 768px) {
-    #relogio {
-        font-size: 5em; /* Tamanho menor em telas menores */
-        letter-spacing: 5px;
-    }
-    .relogio-container {
-        padding: 25px 40px;
-    }
-}
-
-@media (max-width: 480px) {
-    #relogio {
-        font-size: 3.5em; /* Tamanho ainda menor em telas bem pequenas */
-        letter-spacing: 3px;
-    }
-    .relogio-container {
-        padding: 20px 30px;
-    }
-}
+body (
+background-color: #111827;
+color: #fffft:
+font-family: 'Segoe UI', sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+container
+text-align: center;
+font-size: 36px;
+margin-bottom: 20px;
+#clock (
+font-size: 64px;
+font-weight: bold;
+padding: 20px 40px;
+border: 2px solid #10b981:
+border-radius: 12px;
+background-color: #112937;
+color: #106981;
+box-shadow: 0 0 20px
