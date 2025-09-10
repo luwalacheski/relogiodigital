@@ -5,56 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Relógio Digital Rosa Bebê</title>
     <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            background-color: #fce4ec; /* Rosa bebê fraco */
-            font-family: 'Arial', sans-serif;
-            color: #c2185b; /* Um tom de rosa mais escuro para o texto */
-            margin: 0;
-        }
-
-        .relogio-container {
-            text-align: center;
-            background-color: rgba(255, 255, 255, 0.8); /* Fundo branco com leve transparência */
-            padding: 30px 40px;
-            border-radius: 15px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-        }
-
-        #relogio {
-            font-size: 6em; /* Tamanho grande para o relógio */
-            font-weight: bold;
-            letter-spacing: 5px;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-        }
-    </style>
-</head>
-<body>
-
-    <div class="relogio-container">
-        <div id="relogio"></div>
+      <link rel="stylesheet" href="style.css" />
+ </head>
+ <body>
+        <div class="container">
+        <h1>Relógio  Digital </h1>
+        <div id= "clock">00:00:00</div>
     </div>
 
-    <script>
-        function atualizarRelogio() {
-            const agora = new Date();
-            const horas = String(agora.getHours()).padStart(2, '0');
-            const minutos = String(agora.getMinutes()).padStart(2, '0');
-            const segundos = String(agora.getSeconds()).padStart(2, '0');
-
-            const horaFormatada = `${horas}:${minutos}:${segundos}`;
-            document.getElementById('relogio').textContent = horaFormatada;
-        }
-
-        // Atualiza o relógio a cada segundo
-        setInterval(atualizarRelogio, 1000);
-
-        // Chama a função uma vez para exibir a hora imediatamente ao carregar a página
-        atualizarRelogio();
-    </script>
-
-</body>
-</html>
+        <script src="script.js"></script>
+    </body>
+    </html>
